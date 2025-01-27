@@ -8,5 +8,3 @@ execute immediate from '../Snowflake_objects/databases/APPLIANCES_DB/schemas/MAN
 -- snow git list-branches DEMO_REPO --database ADMIN_DB --schema GIT_INTEGRATION
 -- snow git list-files @DEMO_REPO/branches/main/ --database ADMIN_DB --schema GIT_INTEGRATION
 -- snow git execute @DEMO_REPO/branches/main/search_service/Snowflake_objects/deploy_objects.sql --database ADMIN_DB --schema GIT_INTEGRATION
-
-snow git execute @DEMO_REPO/branches/main/search_service/insert_parse_document_sproc.py --database ADMIN_DB --schema GIT_INTEGRATION
