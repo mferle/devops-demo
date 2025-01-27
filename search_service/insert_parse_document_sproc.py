@@ -2,7 +2,7 @@ from snowflake.snowpark import Session
 from snowflake.snowpark.functions import sproc
 
 # establish the session with Snowflake
-#session = Session.builder.config("connection_name", "demo_git_connection").create()
+session = Session.builder.config("connection_name", "demo_git_connection").create()
 
 # register a permanent stored procedure
 @sproc(is_permanent=True, 
@@ -28,4 +28,4 @@ def insert_parse_document(session: Session) -> str:
 #df = session.sql("call insert_parse_document_sp()")
 #df.show()
 
-#session.close()
+session.close()
