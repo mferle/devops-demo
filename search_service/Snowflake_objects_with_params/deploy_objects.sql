@@ -1,4 +1,4 @@
-SET ENV = '''TST''';
+SET ENV = 'TST';
 
 execute immediate from '../Snowflake_objects_with_params/databases/APPLIANCES_DB/create_appliances_db.sql' USING (env => $ENV);
 execute immediate from '../Snowflake_objects_with_params/databases/APPLIANCES_DB/schemas/create_manuals.sql' USING (env => $ENV);
