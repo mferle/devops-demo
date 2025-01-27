@@ -16,7 +16,7 @@ root = Root(session)
 
 # configure the search_service object
 search_service = (root
-  .databases["home_appliances_db"]
+  .databases["appliances_db"]
   .schemas["manuals"]
   .cortex_search_services["manuals_search_service"]
 )
