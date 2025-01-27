@@ -1,4 +1,3 @@
-execute immediate from '../Snowflake_objects/warehouses/create_cortex_developer_wh.sql';
 execute immediate from '../Snowflake_objects/databases/create_appliances_db.sql';
 execute immediate from '../Snowflake_objects/databases/schemas/create_manuals.sql';
 execute immediate from '../Snowflake_objects/databases/schemas/stages/create_manuals_stg.sql';
