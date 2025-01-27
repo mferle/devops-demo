@@ -9,9 +9,12 @@ grant role cortex_developer to role SYSADMIN;
 use role SYSADMIN;
 grant usage on database ADMIN_DB to role cortex_developer;
 grant usage on schema ADMIN_DB.GIT_INTEGRATION to role cortex_developer;
-grant read on git repository ADMIN_DB.GIT_INTEGRATION.DEMO_REPO to role cortex_developer;
-grant write on git repository ADMIN_DB.GIT_INTEGRATION.DEMO_REPO to role cortex_developer;
+grant all on git repository ADMIN_DB.GIT_INTEGRATION.DEMO_REPO to role cortex_developer;
 
 -- create a warehouse for the cortex_developer role
 create warehouse cortex_developer_wh with warehouse_size = 'xsmall';
 grant usage on warehouse cortex_developer_wh to role cortex_developer;
+
+-- grant privilege to execute tasks
+use role accountadmin;
+grant execute task on account to role cortex_developer;
