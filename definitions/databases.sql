@@ -1,4 +1,4 @@
-DEFINE DATABASE NEW_DB;
+--DEFINE DATABASE NEW_DB;
 
-DEFINE TABLE NEW_DB.PUBLIC.TBL (ID INT)
+DEFINE TABLE TBL (ID INT)
   COMMENT = 'This is a table managed by the data project';
