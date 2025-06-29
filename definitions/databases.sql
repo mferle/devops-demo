@@ -1,4 +1,4 @@
 --DEFINE DATABASE NEW_DB;
 
-DEFINE TABLE TBL (ID INT)
+DEFINE TABLE "USER$MAJA.FERLE@IN516HT.COM".PUBLIC.TBL (ID INT)
   COMMENT = 'This is a table managed by the data project';
