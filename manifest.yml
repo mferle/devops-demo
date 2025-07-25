@@ -4,5 +4,3 @@ include_definitions:
 configurations:
   dev:
     intname: "devintegration"
-  uat:
-    intname: "uatintegration"
