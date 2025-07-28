@@ -1,0 +1,14 @@
+manifest_version: 1
+
+include_definitions:
+  - definitions/.*
+
+configurations:
+  DEV:
+    db: "DEV"
+    wh_size: "X-SMALL"  
+    role: "DEV"
+  PROD:
+    db: "PROD"
+    wh_size: "LARGE"
+    role: "PROD"
